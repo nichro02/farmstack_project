@@ -36,11 +36,11 @@ def read_root():
 #get all todos route
 @app.get('/api/todo')
 async def get_todo():
-    response = await fetch_all_todos
+    response = await fetch_all_todos()
     return response
 
 #get todo by title route
-@app.get('/api/todo{title}', response_model=Todo)
+@app.get('/api/todo/{title}', response_model=Todo)
 async def get_todo_by_id(title):
     response = await fetch_one_todo(title)
     
