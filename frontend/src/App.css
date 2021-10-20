@@ -1,5 +1,14 @@
 .App {
   text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.TodoList {
+  width: 400px;
+  background-color: wheat;
+  margin-top: 15px;
 }
 
 .App-logo {
