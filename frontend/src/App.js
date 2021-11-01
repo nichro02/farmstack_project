@@ -30,7 +30,7 @@ function App() {
       Hello, world! This is FARM stack
 
       <div className="TodoList list-group-item justify-content-center align-items-center mx-auto">
-        <h1 className='card text-white bg-primary mb-1' styleName='max-width: 20 rem'>Task Manager</h1>
+        <h1 className='card text-white bg-primary mb-1' stylename='max-width: 20 rem'>Task Manager</h1>
         <h6 className='card text-white bg-primary mb-3'>FASTAPI - React - MongoDB</h6>
         <div className='card-body'></div>
         <h5 className='card text-white bg-dark mb-3'>Add Your Task Below</h5>
