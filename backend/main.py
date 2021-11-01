@@ -16,7 +16,7 @@ from database import (
     remove_todo
 )
 
-origins = ['https://localhost:3000']
+origins = ['http://localhost:3000']
 
 app.add_middleware(
     CORSMiddleware,
@@ -57,7 +57,7 @@ async def post_todo(todo: Todo):
     raise HTTPException(400, 'Something went wrong')
 
 #update todo route
-@app.put('/api/todo{title}', response_model=Todo)
+@app.put('/api/todo/{title}', response_model=Todo)
 async def put_todo(title:str, desc:str):
     response = await update_todo(title, desc)
     if response:
