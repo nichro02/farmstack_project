@@ -65,7 +65,7 @@ async def put_todo(title:str, desc:str):
     raise HTTPException(404, f'There is no todo with this title: {title}')
 
 #delete todo route
-@app.delete('/api/todo{title}')
+@app.delete('/api/todo/{title}')
 async def delete_todo(title):
     response = await remove_todo(title)
     if response:

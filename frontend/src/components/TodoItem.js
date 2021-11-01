@@ -13,7 +13,7 @@ function TodoItem(props) {
                 {props.todo.description}
                 <button onClick={() => deleteTodoHandler(props.todo.title)}
                 className='btn btn-outline-danger my-2 mx-2'>x</button>
-                <hr></hr>
+                
             </p>
         </div>
     )

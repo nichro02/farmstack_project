@@ -45,7 +45,9 @@ function App() {
       </div>
       <div className='TodoList list-group-item justify-content-center align-items-center mx-auto mt-5 border-0'>
         <h5 className='card text-white bg-dark mb-3'>Your Tasks</h5>
-        <div>{/*Create todo items component */}</div>
+        <div>
+          <TodoListView todoList={todoList}/>
+        </div>
       </div>
     </div>
   );
