@@ -30,7 +30,7 @@ function App() {
     <div className="App">
       Hello, world! This is FARM stack
 
-      <div className="TodoList list-group-item justify-content-center align-items-center mx-auto">
+      <div className=" TodoList list-group-item justify-content-center align-items-center mx-auto">
         <h1 className='card text-white bg-primary mb-1' stylename='max-width: 20 rem'>Task Manager</h1>
         <h6 className='card text-white bg-primary mb-3'>FASTAPI - React - MongoDB</h6>
         <div className='card-body'></div>
@@ -43,9 +43,9 @@ function App() {
           </button>
         </span>
       </div>
-      <div className='TodoList list-group-item justify-content-center align-items-center mx-auto mt-5 border-0'>
+      <div className='TodoList list-group-item justify-content-center align-items-center  mt-5 border-0 mx-auto'>
         <h5 className='card text-white bg-dark mb-3'>Your Tasks</h5>
-        <div>
+        <div className='align-items-center'>
           <TodoListView todoList={todoList}/>
         </div>
       </div>

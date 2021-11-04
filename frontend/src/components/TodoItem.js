@@ -7,7 +7,7 @@ function TodoItem(props) {
     }
 
     return(
-        <div>
+        <div className ="mx-auto">
             <p>
                 <span>{props.todo.title}:</span>
                 {props.todo.description}

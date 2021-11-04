@@ -2,10 +2,15 @@
 import TodoItem from './TodoItem'
 
 export default function TodoListView(props) {
+    const todoList = props.todoList
+    const todoItems = todoList.map((todo, index) =>
+        <TodoItem key={index} todo ={todo} />
+    )
+
     return(
-        <div>
-            <ul>
-                {props.todoList.map(todo => <TodoItem todo ={todo} />)}
+        <div className ="align-items-center">
+            <ul className ="align-items-center">
+               {todoItems} 
             </ul>
         </div>
     )
